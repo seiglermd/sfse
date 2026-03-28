@@ -1,6 +1,6 @@
 #include "sfse/ScaleformMemory.h"
 
-RelocPtr<Scaleform::MemoryHeap*> Scaleform::Memory::pGlobalHeap(0x05CA8858);
+RelocPtr<Scaleform::MemoryHeap*> Scaleform::Memory::pGlobalHeap(0x05D84158);
 
 void* ScaleformHeap_Allocate(u64 size)
 {
