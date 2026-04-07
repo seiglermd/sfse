@@ -18,8 +18,8 @@ static_assert(sizeof(BSNonReentrantSpinLock) == 0x4);
 class BSReadWriteLock
 {
 public:
-	DEFINE_MEMBER_FN_0(lock_read, void, 0x022CEAB0);
-	DEFINE_MEMBER_FN_0(lock_write, void, 0x022CEB30);
+	DEFINE_MEMBER_FN_0(lock_read, void, 0x022CE9B0);
+	DEFINE_MEMBER_FN_0(lock_write, void, 0x022CEA30);
 	DEFINE_MEMBER_FN_0(unlock_read, void, 0x002C6280);
 	DEFINE_MEMBER_FN_0(unlock_write, void, 0x002C4B80);
 
@@ -33,8 +33,8 @@ static_assert(sizeof(BSReadWriteLock) == 0x8);
 class BSSpinLock
 {
 public:
-	DEFINE_MEMBER_FN_0(lock, void, 0x022CB400);
-	DEFINE_MEMBER_FN_0(try_lock, bool, 0x022CB3B0);
+	DEFINE_MEMBER_FN_0(lock, void, 0x022CB300);
+	DEFINE_MEMBER_FN_0(try_lock, bool, 0x022CB2B0);
 	DEFINE_MEMBER_FN_0(unlock, void, 0x002B6600);
 
 private:
