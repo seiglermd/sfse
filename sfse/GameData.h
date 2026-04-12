@@ -140,10 +140,16 @@ public:
 	u64	unk1528;
 	u64	unk1530;
 	u64	unk1538;
-	BSSimpleList<TESPackedFile*> listFiles; // 1540
-	TESFileCollection CompiledFileCollection; // 1550
-	u64 unk1578[(0x17C8 - 0x1580) >> 3];
-	void* regionDataManager;	// 17C8
+	u64 unk1540;
+	u64 unk1548;
+	u64 unk1550;
+	u64 unk1558;
+	u64 unk1560;
+	u64 unk1568;
+
+	BSSimpleList<TESPackedFile*> listFiles; // 1570
+	TESFileCollection CompiledFileCollection; // 1580
+	u64 unk1578[(0x17C8 - 0x15B0) >> 3];
 
 	static TESDataHandler* GetSingleton()
 	{
@@ -203,9 +209,8 @@ public:
 	}
 };
 static_assert(offsetof(TESDataHandler, pFormArray) == 0x70);
-static_assert(offsetof(TESDataHandler, listFiles) == 0x1540);
-static_assert(offsetof(TESDataHandler, CompiledFileCollection) == 0x1550);
-static_assert(offsetof(TESDataHandler, regionDataManager) == 0x17C8);
+static_assert(offsetof(TESDataHandler, listFiles) == 0x1570);
+static_assert(offsetof(TESDataHandler, CompiledFileCollection) == 0x1580);
 
 struct MaterialDatabase
 {
